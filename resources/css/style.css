@@ -2,3 +2,51 @@ html {
     font-family: "Calisto MT", "Georgia", serif;
     font-size: 16px;
 }
+
+#profilePic {
+    background-image: url("../images/placeholderMe.jpg");
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
+#iconA, 
+#iconB, 
+#iconC, 
+#iconD,
+#iconE {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px dashed black;
+}
+
+#iconA {
+    background-image: url("../images/EEElogo.jpg");
+    background-size: cover;
+}
+
+#iconB {
+    background-image: url("../images/html5 logo.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#iconC {
+    background-image: url("../images/css5logoSmaller.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#iconD {
+    background-image: url("../images/javaScriptlogo.png");
+    background-size: cover;
+}
+
+#iconE {
+    background-image: url("../images/gitlogo.png");
+    background-size: cover;
+}
+
+
