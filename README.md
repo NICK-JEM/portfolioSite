@@ -7,10 +7,14 @@ The project is a static website designed for me to upload project summaries
 for those I have completed so far. It will be used to track my progress with
 coding and show off my abilities to interested parties.
 
-As of last commit there is only a skeleton of a Home page and some styling, 
-However I will update this readme as I complete sections.
+The project is unguided aside from a few tips and a Kanban board to track
+task completion (on the codecademy platform). All coding work my own, including 
+bugs and errors!
 
 ### NOTES
+
+As of last commit there is only a skeleton of a Home page and some styling, 
+However I will update this readme as I complete sections.
 
 > timeline for this project is 1.5 days (evening of 4th and day of 5th april 2022),
 > with one overflow day allowed if it is taking longer than planned. 
