@@ -1,6 +1,41 @@
 html {
     font-family: "Calisto MT", "Georgia", serif;
     font-size: 16px;
+    text-align: center;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+
+}
+
+header {
+    display: grid;
+    grid-template-rows: 40% 60%;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+main {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 150px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 20% 50%; 
+
+}
+
+footer {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
 }
 
 #profilePic {
