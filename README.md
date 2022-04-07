@@ -11,7 +11,7 @@ The project is unguided aside from a few tips and a Kanban board to track
 task completion (on the codecademy platform). All coding work my own, including 
 bugs and errors!
 
-### NOTES
+### NOTES (for own tracking. will delete upon completion of project)
 
 As of last commit there is only a skeleton of a Home page and some styling, 
 However I will update this readme as I complete sections.
@@ -27,3 +27,13 @@ However I will update this readme as I complete sections.
 
 >logo images obtained via free logo websites, none of which are my property.
 >however it was stated on the sites these were free for non commercial use.
+
+### As of 22:18 on april 5th
+> added grid layout and styled various elements to achieve a sleek look.
+> learned and implemented clip-path to create diagonal polygons for image
+> and header/footer purposes.
+> made some changes to overall layout and added lorum ipsum to test text box
+> sizing responsiveness. adjusted icons to flex wrap.
+> fairly responsive already, however text sizing will be adjusted with 
+> media query. form and toggles for accessiblity purposes also implemented in
+> next session.  
