@@ -37,3 +37,10 @@ However I will update this readme as I complete sections.
 > fairly responsive already, however text sizing will be adjusted with 
 > media query. form and toggles for accessiblity purposes also implemented in
 > next session.  
+
+### additions (no work done on the 6th april, overflow now 7th)
+> multiple changes to styling
+> addition of contact page and page links
+> preparation of areas to add javascript objects in both
+> styling responsivity and accessibility to be added
+> projects page optional, may be added upon completion of javaScript elements
