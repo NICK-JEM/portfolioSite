@@ -67,6 +67,36 @@ main {
     width: 100%;
 }
 
+#messageMe {
+    display: grid;
+    justify-content: space-around;
+    align-items: flex-start;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-top: 100px;
+    grid-template-rows: 1fr 1fr 2fr; 
+    height: 1200px;
+    width: 100%;
+}
+
+#intro {
+    grid-row: 2 / 3;
+    height: 1fr;
+    width: 98%;
+    text-align: justify;
+    border: 2px solid #190357;
+    border-radius: 10px;
+}
+
+#form {
+    grid-row: 3 / 4;
+    height: 3fr;
+    width: 98%;
+    border: 2px solid #190357;
+    border-radius: 10px;
+    margin-top: 10%;
+}
+
 p {
     text-align: justify;
     padding: 1rem;
@@ -169,7 +199,8 @@ input:checked + .slide:before {
 
 
 
-#image {
+#image,
+#imageCon {
     display: grid;
     justify-content: center;
     align-self: flex-end;
@@ -179,6 +210,8 @@ input:checked + .slide:before {
     width: 100%;
     font-size: 12px;
 }
+
+
 
 #bio {
     display: grid;
@@ -260,7 +293,8 @@ footer {
     grid-column-end: 3;
 }
 
-#profilePic {
+#profilePic,
+#conPic {
     background-image: url("../images/placeholderMe.jpg");
     background-size: cover;
     background-position: center;
@@ -268,6 +302,7 @@ footer {
     clip-path: polygon(100% 0%, 35% 0%, 0% 20%, 0% 100%, 75% 100%, 100% 85%);
     width: 150px;
     height: 170px;
+    border: 1px solid black;
 }
 
 #iconA, 
