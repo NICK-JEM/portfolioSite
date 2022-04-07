@@ -14,13 +14,13 @@
 
         <header>
 
-            <h1>My Portfolio Website (Static)</h1>
+            <h1>My Portfolio Website</h1>
             <nav>
 
                 <ul id="navigate">
-                    <li><a>Home</a></li>
-                    <li><a>Contact Me</a></li>
-                    <li><a>Project1</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#">Projects</a></li>
                 </ul>
 
             </nav>
@@ -33,13 +33,34 @@
             <div id="toggles">
 
                 <div id="colorBlind">
-                    <label>REDGREEN | </label>
-                    <label>BLUEYELLOW | </label>
-                    <label>TOTAL</label>
+                    <h2>Colour Blind Modes</h2>
+
+                    <label class="redGreen" name="Red-Green">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                       <label for="Red-Green">R/G</label><br><br>
+
+                    <label class="blueYellow" name="Blue-Yellow">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <label for="Blue-Yellow">B/Y</label><br><br>
+
+                    <label class="total" name="Total">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <label for="Total">Total</label>
+
                 </div>
 
                 <div id="darkLight">
-                    <label>DARK MODE/LIGHT MODE</label>
+                    <h2>Dark/Light Mode </h2>
+                    <label class ="dl" name="Dark-Light">
+                        <input type="checkbox">
+                        <span class="slide round"></span>
+                    </label>
                 </div>
 
             </div>
@@ -86,7 +107,7 @@
         </main>
 
         <div class="footBG"></div>
-        
+
         <footer>
             <div id="author">NICK_JEM</div>
             <div id="other">NICK_JEM is a moniker used for my coding journey</div>
