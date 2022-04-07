@@ -33,6 +33,7 @@ h1 {
     height: 1em;
     width: 100%;
     padding-left: 2.2rem;
+    text-shadow: 0 0 2px #ffffff;
 }
 
 nav, h1 {
@@ -47,12 +48,20 @@ nav {
     height: 2em;
     width: 88%;
     text-align: left;
+    font-weight: bold;
     font-size: 0.75rem;
 }
 
 #navigate li{ 
-    margin-right: 0.5rem;
+    margin-right: 0.1rem;
     display: inline-flex;
+    background-color: rgba(14, 49, 250, 0.2);
+    border-radius: 20%;
+    padding: 0.15rem;
+}
+
+a {
+    text-shadow: 0 0 2px #b8b7b7;
 }
 
 main {
@@ -115,6 +124,7 @@ p {
 #colorBlind,
 #darkLight {
     width: 100%;
+    min-width: 90px;
     height: 80%;
     margin-left: 10%;
 }
@@ -337,6 +347,7 @@ footer {
     font-weight: bold;
     grid-column-start: 2;
     grid-column-end: 3;
+    text-shadow: 0 0 2px #ffffff;
 }
 
 #other {
@@ -344,6 +355,7 @@ footer {
     padding-bottom: 1rem;
     grid-column-start: 1;
     grid-column-end: 3;
+    text-shadow: 0 0 2px #0c699e;
 }
 
 #profilePic,
