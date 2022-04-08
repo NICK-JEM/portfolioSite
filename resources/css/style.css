@@ -81,6 +81,18 @@ main {
     width: 100%;
 }
 
+#summaries {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-top: 100px;
+    grid-template-rows: 1fr 1fr 2fr; 
+    height: 1200px;
+    width: 100%;
+}
+
 #messageMe {
     display: grid;
     justify-content: space-around;
@@ -99,8 +111,9 @@ main {
     width: 98%;
     text-align: justify;
     font-weight: bold;
+    letter-spacing: 0.1rem;
     text-shadow: 0 0 2px #000000;
-    color: #ffffff;
+    color: #e4eaf2;
     border: 2px solid #190357;
     border-radius: 10px;
     background-color:#0aa6ee98;
@@ -110,6 +123,7 @@ main {
     grid-row: 3 / 4;
     height: 450px;
     width: 98%;
+    margin-top: 5%;
     padding-top: 5%;
     border: 2px solid #190357;
     border-radius: 10px;
@@ -125,14 +139,19 @@ main {
 textarea {
     width: 84%;
     border: 2px solid #190357;
-    position: relative;
-    right: 3%;
     border-radius: 6px;
 }
 
 #form input {
     border: 2px solid #190357;
     border-radius: 6px;
+}
+
+#form label,
+#form textarea,
+#form input {
+    position: relative;
+    right: 4.5%;
 }
 
 p {
@@ -243,9 +262,13 @@ input:checked + .slide:before {
     align-self: flex-end;
     text-align: center;
     grid-template-rows: 80% 20%;
-    height: 85%;
+    height: 90%;
     width: 100%;
     font-size: 12px;
+}
+
+#imageCon label {
+    margin-top: 10%;
 }
 
 #bio {
@@ -257,7 +280,7 @@ input:checked + .slide:before {
     height: 100%;
     overflow-y: auto;
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 8%;
     border: 2px solid #190357;
     border-radius: 5px;
 }
@@ -265,6 +288,10 @@ input:checked + .slide:before {
 #about {
     grid-column: 1 / 2;
     grid-row: 1 / span 2;
+}
+
+#about p {
+    text-align: justify;
 }
 
 #skills {
@@ -346,6 +373,7 @@ input:checked + .slide:before {
 #projTwo p {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+    text-align: justify;
 }
 
 footer {
