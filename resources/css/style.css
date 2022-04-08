@@ -64,6 +64,11 @@ a {
     text-shadow: 0 0 2px #b8b7b7;
 }
 
+#conMe {
+    color: #190357;
+    text-shadow: none;
+}
+
 main {
     display: grid;
     justify-content: center;
@@ -84,7 +89,7 @@ main {
     grid-row: 1 / 2;
     margin-top: 100px;
     grid-template-rows: 1fr 1fr 2fr; 
-    height: 1200px;
+    height: 1000px;
     width: 100%;
 }
 
@@ -93,21 +98,45 @@ main {
     height: 1fr;
     width: 98%;
     text-align: justify;
+    font-weight: bold;
+    text-shadow: 0 0 2px #000000;
+    color: #ffffff;
     border: 2px solid #190357;
     border-radius: 10px;
+    background-color:#0aa6ee98;
 }
 
 #form {
     grid-row: 3 / 4;
-    height: 3fr;
+    height: 450px;
     width: 98%;
+    padding-top: 5%;
     border: 2px solid #190357;
     border-radius: 10px;
-    margin-top: 10%;
+    text-align: center;
+    background-color:#0aa6ee98;
+}
+
+#form label {
+    color: #190357;
+    font-weight: bold;
+}
+
+textarea {
+    width: 84%;
+    border: 2px solid #190357;
+    position: relative;
+    right: 3%;
+    border-radius: 6px;
+}
+
+#form input {
+    border: 2px solid #190357;
+    border-radius: 6px;
 }
 
 p {
-    text-align: justify;
+    text-align: center;
     padding: 1rem;
 }
 
@@ -207,8 +236,6 @@ input:checked + .slide:before {
     border-radius: 4px;
 }
 
-
-
 #image,
 #imageCon {
     display: grid;
@@ -216,12 +243,10 @@ input:checked + .slide:before {
     align-self: flex-end;
     text-align: center;
     grid-template-rows: 80% 20%;
-    height: 80%;
+    height: 85%;
     width: 100%;
     font-size: 12px;
 }
-
-
 
 #bio {
     display: grid;
@@ -241,10 +266,12 @@ input:checked + .slide:before {
     grid-column: 1 / 2;
     grid-row: 1 / span 2;
 }
+
 #skills {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
+
 .icons {
     display: flex;
     flex-flow: row wrap;
@@ -320,8 +347,6 @@ input:checked + .slide:before {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
 }
-
-
 
 footer {
     display: grid;
