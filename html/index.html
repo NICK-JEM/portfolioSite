@@ -6,15 +6,15 @@
         <title>My Portfolio/Home</title>
         <link rel="stylesheet" href="../resources/css/style.css">
 
-
     </head>
 
-    <body>
+    <body id="HomeBod">
+
         <div class="headBG"></div>
 
-        <header>
+        <header id="banner">
 
-            <h1>My Portfolio Website</h1>
+            <h1 id="heading">My Portfolio Website</h1>
             <nav>
 
                 <ul id="navigate">
@@ -33,34 +33,56 @@
             <div id="toggles">
 
                 <div id="colorBlind">
-                    <h2>Colour Blind Modes</h2>
+                    <h2>Colorblind<br>Modes</h2>
 
-                    <label class="redGreen" name="Red-Green">
-                        <input id="rG" type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                       <label for="Red-Green">Red-Green</label><br><br>
+                    <input id="rG" type="radio" name="color">
+                    <label>Red-Green</label><br><br>
 
-                    <label class="blueYellow" name="Blue-Yellow">
-                        <input id="bY" type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                    <label for="Blue-Yellow">Blue-Yellow</label><br><br>
+                        
+                    <input id="bY" type="radio" name="color">
+                    <label>Blue-Yellow</label><br><br>
 
-                    <label class="total" name="Total">
-                        <input id="tot" type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                    <label for="Total">Total</label>
+                    <input id="tot" type="radio" name="color">
+                    <label>Total</label>
+
 
                 </div>
 
                 <div id="darkLight">
-                    <h2>Light/Dark Mode </h2>
-                    <label class ="dl" name="Dark-Light">
-                        <input type="checkbox">
-                        <span class="slide round"></span>
-                    </label>
+                    <h2>Light/Dark<br>Mode </h2>
+                    
+                    <input type="radio" name="DL" id="dark">
+                    <label>Dark</label><br><br>
+
+                    <input type="radio" name="DL" id="light">
+                    <label>Light</label>
+
+                    <script>
+                        let Dark = document.getElementById('dark'), 
+                            bod = document.getElementById('HomeBod'),
+                            Light = document.getElementById('light');
+                        let project = document.getElementById('projects'),
+                            heading = document.getElementById('heading');
+
+                        let dMode = function() {
+                            bod.style.backgroundColor='#1d1d1d', bod.style.color='#e0d9d9';
+                            heading.style.color='black';
+                        }
+
+
+
+                        let lMode = function() {
+                            bod.style.backgroundColor='white';
+                            bod.style.color='black';
+                            proj.style.backgroundColor='black';
+                            proj.style.color='white';
+                        }
+
+                        Dark.addEventListener('click', dMode)
+                        Light.addEventListener('click', lMode)
+
+                    </script>
+                    
                 </div>
 
             </div>
@@ -92,7 +114,9 @@
             </div>
 
             <div id="projects">
+
                 <h2>PROJECTS</h2>
+
                 <div id="projOne">
                     <h3>Project One</h3>                    
                     <div id="screenOne" name="scrOne">Screenshot 1</div>
@@ -100,6 +124,7 @@
                 </div>
 
                 <div id="projTwo">
+
                     <h3>Project Two</h3>
                     <div id="screenTwo">Screenshot 2</div>
                     <p>Praesent eleifend, felis nec laoreet ullamcorper, diam sem dignissim libero, nec dignissim sem mi eu felis. Donec volutpat augue eu maximus pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In hac habitasse platea dictumst. Nunc vel varius enim, non imperdiet lorem. In mattis lorem tortor, vitae tempor nisi viverra ac. Proin aliquam mauris sed ante vulputate euismod. Donec tristique tortor et sodales pellentesque. Nunc condimentum turpis nec sapien cursus, id fringilla tortor euismod. Quisque eu sem justo. Phasellus purus erat, malesuada sit amet luctus vitae, facilisis vel urna. Suspendisse eget nisi.</p>
@@ -108,10 +133,50 @@
 
         </main>
 
-        <footer>
+        <footer id="foo">
+
             <div id="author">NICK_JEM</div>
             <div id="other">NICK_JEM is a moniker used for my coding journey</div>
+
         </footer>
+
+        <script>
+            let RG = document.getElementById('rG');
+            let BY = document.getElementById('bY');
+            let Tot = document.getElementById('tot');
+            let Ban = document.getElementById('banner');
+            let Bio = document.getElementById('bio');
+            let Foo = document.getElementById('foo');
+            let pro = document.getElementById('projects');
+
+
+            let rgMode = function() {
+                Ban.style.background="";
+                Foo.style.background="";
+                Bio.style.border="";
+                pro.style.border="";
+            }
+
+            let byMode = function() {
+                Ban.style.background="linear-gradient(-6deg, #df5d5d, #c50505, #fc9c9c, #c50505, #df5d5d)";
+                Foo.style.background="linear-gradient(-4.5deg, #df5d5d, #c50505, #fc9c9c, #c50505, #df5d5d)";
+                Bio.style.border="2px solid #c50505";
+                pro.style.border="2px solid #c50505";
+            }
+
+            let totMode = function() {
+                Ban.style.background="linear-gradient(-6deg, #696b6b, #797979, #9b9b9b, #797979, #696b6b)";
+                Foo.style.background="linear-gradient(-4.5deg, #696b6b, #797979, #9b9b9b, #797979, #696b6b)";
+                Bio.style.border="2px solid #9b9b9b";
+                pro.style.border="2px solid #9b9b9b";
+                
+            }
+
+
+            RG.addEventListener('click', rgMode);
+            BY.addEventListener('click', byMode);
+            Tot.addEventListener('click', totMode);
+        </script>
 
     </body>
 </html>
