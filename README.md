@@ -1,6 +1,8 @@
 # portfolioSite 
 ```HTML CSS JavaScript```
-
+NOTE: COULD NOT DEPLOY ON GITHUB PAGES DUE TO HAVING CODE IN FOLDERS. INTEND
+      TO PUSH TO ROOT AT LATER DATE AND DEPLOY.
+      
 ## A personal portfolio static website created as part of a codecademy project.
 
 The project is a static website designed for me to upload project summaries
