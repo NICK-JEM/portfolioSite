@@ -74,14 +74,14 @@ nav {
 }
 
 a:link {
-    color:#190357;
+    color:#ffffff;
     text-decoration: none;
     padding: 0.1rem;
 }
 
 a:hover,
 a:focus {
-    color: #ced104;
+    color: #ffffff;
     text-shadow: 0 0 2px #0c0c0c;
     background-color: rgba(14, 49, 250, 0.1);
     border-radius: 20%;

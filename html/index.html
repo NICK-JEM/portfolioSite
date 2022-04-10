@@ -18,9 +18,9 @@
             <nav>
 
                 <ul id="navigate">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
-                    <li><a href="projects.html">Projects</a></li>
+                    <li><a id="links" href="#">Home</a></li>
+                    <li><a id="links" href="contact.html">Contact Me</a></li>
+                    <li><a id="links" href="projects.html">Projects</a></li>
                 </ul>
 
             </nav>
@@ -118,14 +118,14 @@
                 <h2>PROJECTS</h2>
 
                 <div id="projOne">
-                    <h3>Project One</h3>                    
+                    <h3 id="pOne">Project One</h3>                    
                     <div id="screenOne" name="scrOne">Screenshot 1</div>
                     <p>Etiam posuere sem congue lectus tempus elementum. Proin sit amet mollis nulla. Sed semper risus ac erat fermentum, sed lacinia tellus ornare. Sed commodo nulla at ex vulputate pharetra. Morbi pellentesque dignissim tellus at dictum. Nam mattis augue vel condimentum lobortis. Nam nec augue in ante ornare cursus a ut nulla. Fusce ullamcorper convallis nunc, ac commodo dui hendrerit sit amet. Cras porttitor eu ipsum sed sodales. Integer non nibh sagittis, vestibulum enim non, scelerisque nisl. Aliquam erat volutpat.</p>
                 </div>
 
                 <div id="projTwo">
 
-                    <h3>Project Two</h3>
+                    <h3 id="pTwo">Project Two</h3>
                     <div id="screenTwo">Screenshot 2</div>
                     <p>Praesent eleifend, felis nec laoreet ullamcorper, diam sem dignissim libero, nec dignissim sem mi eu felis. Donec volutpat augue eu maximus pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In hac habitasse platea dictumst. Nunc vel varius enim, non imperdiet lorem. In mattis lorem tortor, vitae tempor nisi viverra ac. Proin aliquam mauris sed ante vulputate euismod. Donec tristique tortor et sodales pellentesque. Nunc condimentum turpis nec sapien cursus, id fringilla tortor euismod. Quisque eu sem justo. Phasellus purus erat, malesuada sit amet luctus vitae, facilisis vel urna. Suspendisse eget nisi.</p>
                 </div>
@@ -141,18 +141,26 @@
         </footer>
 
         <script>
+            //radio buttons
             let RG = document.getElementById('rG');
             let BY = document.getElementById('bY');
             let Tot = document.getElementById('tot');
+
+            //elements
             let Ban = document.getElementById('banner');
             let Bio = document.getElementById('bio');
             let Foo = document.getElementById('foo');
             let pro = document.getElementById('projects');
+            let pOne = document.getElementById('pOne');
+            let pTwo = document.getElementById('pTwo');
 
+            //functions for colorblind mode changes
             let rgMode = function() {
                 Ban.style.background="";
                 Foo.style.background="";
                 Bio.style.border="";
+                pOne.style.borderBottom='';
+                pTwo.style.borderBottom='';
                 pro.style.border="";
             }
 
@@ -160,13 +168,18 @@
                 Ban.style.background="linear-gradient(-6deg, #df5d5d, #c50505, #fc9c9c, #c50505, #df5d5d)";
                 Foo.style.background="linear-gradient(-4.5deg, #df5d5d, #c50505, #fc9c9c, #c50505, #df5d5d)";
                 Bio.style.border="2px solid #c50505";
+                pOne.style.borderBottom='2px dashed #c50505';
+                pTwo.style.borderBottom='2px dashed #c50505';
                 pro.style.border="2px solid #c50505";
             }
+
 
             let totMode = function() {
                 Ban.style.background="linear-gradient(-6deg, #696b6b, #797979, #9b9b9b, #797979, #696b6b)";
                 Foo.style.background="linear-gradient(-4.5deg, #696b6b, #797979, #9b9b9b, #797979, #696b6b)";
                 Bio.style.border="2px solid #9b9b9b";
+                pOne.style.borderBottom='2px dashed #9b9b9b';
+                pTwo.style.borderBottom='2px dashed #9b9b9b';
                 pro.style.border="2px solid #9b9b9b";
                 
             }
@@ -174,6 +187,10 @@
             RG.addEventListener('click', rgMode);
             BY.addEventListener('click', byMode);
             Tot.addEventListener('click', totMode);
+
+            //NOTE: wanted to have different colors for hover over nav
+            //      for each mode, however I could not get hover over 
+            //      to change via DOM. so changed all to white on hover.
         </script>
     </body>
 </html>
