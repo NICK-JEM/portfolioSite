@@ -1,5 +1,5 @@
 html {
-    font-family: "Calisto MT", "Georgia", serif;
+    font-family: "Verdane", "Arial", sans-serif;
     font-size: 16px;
     text-align: center;
     margin: 0%;
@@ -405,7 +405,16 @@ p {
     grid-row: 3 / 4;
 }
 
-#screenOne,
+#screenOne {
+    grid-column: 1 / 2;
+    width: 150px;
+    height: 200px;
+    justify-self: center;
+    background-image: url('../images/CONDUITscreenshot.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 #screenTwo {
     grid-column: 1 / 2;
     width: 100px;
