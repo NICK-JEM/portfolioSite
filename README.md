@@ -8,8 +8,23 @@ for those I have completed so far. It will be used to track my progress with
 coding and show off my abilities to interested parties.
 
 The project is unguided aside from a few tips and a Kanban board to track
-task completion (on the codecademy platform). All coding work my own, including 
-bugs and errors!
+task completion (on the codecademy platform). All coding work my own, including bugs and errors!
+
+## functionality issues
+
+* There is a basic level of responsive functionality, however no extra media
+  queries added to improve it for this project. 
+
+* Dark/Light modes and Colorblind modes are available for Home page, however 
+  they will not stay active between pages as I have not set cookies. font change to sans-serif to improve readability in dark mode. redGreen is default
+  color scheme, and Total is a greyscale but it is unneccessary as I used 
+  several hues of a single color.
+
+* most of my wireframed design has been implemented, however the diagonals 
+  could be smoother and element spacing more consistent with page resize.
+
+
+
 
 ### NOTES (for own tracking. will delete upon completion of project)
 
