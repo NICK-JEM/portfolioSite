@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <title>My Portfolio/Home</title>
+        <link rel="stylesheet" href="../resources/css/style.css">
+
+    </head>
+
+    <body id="HomeBod">
+
+        <div class="headBG"></div>
+
+        <header id="banner">
+
+            <h1 id="heading">My Portfolio Website</h1>
+            <nav>
+
+                <ul id="navigate">
+                    <li><a id="links" href="#">Home</a></li>
+                    <li><a id="links" href="contact.html">Contact Me</a></li>
+                    <li><a id="links" href="projects.html">Projects</a></li>
+                </ul>
+
+            </nav>
+
+        </header>
+
+
+        <main>
+
+            <div id="toggles">
+
+                <div id="colorBlind">
+                    <h2>Colorblind<br>Modes</h2>
+
+                    <input id="rG" type="radio" name="color">
+                    <label>Red-Green</label><br><br>
+
+                        
+                    <input id="bY" type="radio" name="color">
+                    <label>Blue-Yellow</label><br><br>
+
+                    <input id="tot" type="radio" name="color">
+                    <label>Total</label>
+
+
+                </div>
+
+                <div id="darkLight">
+                    <h2>Light/Dark<br>Mode </h2>
+                    
+                    <input type="radio" name="DL" id="dark">
+                    <label>Dark</label><br><br>
+
+                    <input type="radio" name="DL" id="light">
+                    <label>Light</label>
+
+                    <script>
+                        let Dark = document.getElementById('dark'), 
+                            bod = document.getElementById('HomeBod'),
+                            Light = document.getElementById('light');
+                        let project = document.getElementById('projects'),
+                            heading = document.getElementById('heading');
+
+                        let dMode = function() {
+                            bod.style.backgroundColor='#1d1d1d', bod.style.color='#e0d9d9';
+                            heading.style.color='black';
+                        }
+
+
+
+                        let lMode = function() {
+                            bod.style.backgroundColor='white';
+                            bod.style.color='black';
+                            proj.style.backgroundColor='black';
+                            proj.style.color='white';
+                        }
+
+                        Dark.addEventListener('click', dMode)
+                        Light.addEventListener('click', lMode)
+
+                    </script>
+                    
+                </div>
+
+            </div>
+
+            <div id="image">
+                <div id="profilePic"></div>
+                <label for="profilePic">Jack (NICK_JEM)</label>
+            </div>
+            
+
+            <div id="bio">
+
+               <div id="about">
+                    <h2>ABOUT ME</h2>
+                    <p> HI THERE!<br><br>
+                        My name is Jack, and I recently graduated with a Bachelor's degree in Electrical and Electronic Engineering. Being a mature graduate from a very poor background, this is a huge achievement for me :)<br><br>
+                        However, I want to work in software so I am working my butt off to improve my skills with a full stack path on Codecademy. I am doing well for a beginner, and I am proud of my achievements so far.<br><br>
+                        I built this static template of a portfolio website I intend to build in the future, once I am sure I can create a sleek and functional site.<br><br>
+                        So take a gander and if you feel you have some suggestions, let me know ^_^
+                        
+</p>
+                </div>
+
+                <div id="skills">
+                    <h2>SKILLS</h2>
+                    <div class="icons">
+                        <div id="iconA"></div>
+                        <div id="iconB"></div>
+                        <div id="iconC"></div>
+                        <div id="iconD"></div>
+                        <div id="iconE"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="projects">
+
+                <h2>PROJECTS</h2>
+
+                <div id="projOne">
+                    <h3 id="pOne">CONDUIT Asset Management App</h3>                    
+                    <div id="screenOne" name="scrOne"></div>
+                    <p>For my final year project I had to learn php and SQL to make a simple app that could: <br><br>
+                        1. scan a QR code<br>
+                        2. perform CRUD operations on an SQL database<br>
+                        3. be platform independent<br>
+                        4. allow manual access to various database functions<br>
+                        5. only be accessed via secure username/password combo<br><br>
+                        while software was not my degree, covid forced me to reassess project options, hence the development of CONDUIT.                    
+                        
+                    </p>
+                </div>
+
+                <div id="projTwo">
+
+                    <h3 id="pTwo">Project Two</h3>
+                    <div id="screenTwo">Screenshot 2</div>
+                    <p>Praesent eleifend, felis nec laoreet ullamcorper, diam sem dignissim libero, nec dignissim sem mi eu felis. Donec volutpat augue eu maximus pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In hac habitasse platea dictumst. Nunc vel varius enim, non imperdiet lorem. In mattis lorem tortor, vitae tempor nisi viverra ac. Proin aliquam mauris sed ante vulputate euismod. Donec tristique tortor et sodales pellentesque. Nunc condimentum turpis nec sapien cursus, id fringilla tortor euismod. Quisque eu sem justo. Phasellus purus erat, malesuada sit amet luctus vitae, facilisis vel urna. Suspendisse eget nisi.</p>
+                </div>
+            </div>
+
+        </main>
+
+        <footer id="foo">
+
+            <div id="author">NICK_JEM</div>
+            <div id="other">NICK_JEM is a moniker used for my coding journey</div>
+
+        </footer>
+
+        <script>
+            //radio buttons
+            let RG = document.getElementById('rG');
+            let BY = document.getElementById('bY');
+            let Tot = document.getElementById('tot');
+
+            //elements
+            let Ban = document.getElementById('banner');
+            let Bio = document.getElementById('bio');
+            let Foo = document.getElementById('foo');
+            let pro = document.getElementById('projects');
+            let pOne = document.getElementById('pOne');
+            let pTwo = document.getElementById('pTwo');
+
+            //functions for colorblind mode changes
+            let rgMode = function() {
+                Ban.style.background="";
+                Foo.style.background="";
+                Bio.style.border="";
+                pOne.style.borderBottom='';
+                pTwo.style.borderBottom='';
+                pro.style.border="";
+            }
+
+            let byMode = function() {
+                Ban.style.background="linear-gradient(-6deg, #df5d5d, #c50505, #fc9c9c, #c50505, #df5d5d)";
+                Foo.style.background="linear-gradient(-4.5deg, #df5d5d, #c50505, #fc9c9c, #c50505, #df5d5d)";
+                Bio.style.border="2px solid #c50505";
+                pOne.style.borderBottom='2px dashed #c50505';
+                pTwo.style.borderBottom='2px dashed #c50505';
+                pro.style.border="2px solid #c50505";
+            }
+
+
+            let totMode = function() {
+                Ban.style.background="linear-gradient(-6deg, #696b6b, #797979, #9b9b9b, #797979, #696b6b)";
+                Foo.style.background="linear-gradient(-4.5deg, #696b6b, #797979, #9b9b9b, #797979, #696b6b)";
+                Bio.style.border="2px solid #9b9b9b";
+                pOne.style.borderBottom='2px dashed #9b9b9b';
+                pTwo.style.borderBottom='2px dashed #9b9b9b';
+                pro.style.border="2px solid #9b9b9b";
+                
+            }
+
+            RG.addEventListener('click', rgMode);
+            BY.addEventListener('click', byMode);
+            Tot.addEventListener('click', totMode);
+
+            //NOTE: wanted to have different colors for hover over nav
+            //      for each mode, however I could not get hover over 
+            //      to change via DOM. so changed all to white on hover.
+        </script>
+    </body>
+</html>
