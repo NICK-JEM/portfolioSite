@@ -1,7 +1,6 @@
 # portfolioSite 
 ```HTML CSS JavaScript```
-NOTE: COULD NOT DEPLOY ON GITHUB PAGES DUE TO HAVING CODE IN FOLDERS. INTEND
-      TO PUSH TO ROOT AT LATER DATE AND DEPLOY.
+
       
 ## A personal portfolio static website created as part of a codecademy project.
 
@@ -18,17 +17,38 @@ task completion (on the codecademy platform). All coding work my own, including 
   queries added to improve it for this project. 
 
 * Dark/Light modes and Colorblind modes are available for Home page, however 
-  they will not stay active between pages as I have not set cookies. font change to sans-serif to improve readability in dark mode. redGreen is default
+  they will not stay active between pages as I have not set cookies. font 
+  change to sans-serif to improve readability in dark mode. redGreen is default
   color scheme, and Total is a greyscale but it is unneccessary as I used 
   several hues of a single color.
 
 * most of my wireframed design has been implemented, however the diagonals 
   could be smoother and element spacing more consistent with page resize.
+  
+## final notes
+```
+As of deployment on github pages: completed colorblind and dark modes for testing only on 
+the home page as I could not separate the javascript functions into a different file, 
+and the other pages don't have the toggles. Would implement the toggles in the banner
+in future. 
 
+added a small screenshot of several of the screens i took for my uni final year project, 
+and a short summary of function. did not add detail to the projects page.
 
+in future projects I would start with the media queries to specify device screen size, as 
+my site looks very small on mobile. functions work as expected, but there is a slight
+issue with the :visited styling on the nav.
 
+timeframe was not sufficient as I did not factor in my personal life commitments, therefore
+actual coding, debug and adjustments took approx. 7 days, but only 4-5hrs of each of them, so
+around 35hrs to complete.
 
-### NOTES (for own tracking. will delete upon completion of project)
+conclusion: While my site meets the brief (and some parts exceed specs), I am unhappy with the
+disjointed nature of the mode toggles and the small sizes on mobile devices. However this is
+only a template until I deploy a "true" portfolio website, to show some of my capability 
+thus far as a novice coder.
+
+### NOTES (for own tracking. left notes in for future reference)
 
 As of last commit there is only a skeleton of a Home page and some styling, 
 However I will update this readme as I complete sections.
